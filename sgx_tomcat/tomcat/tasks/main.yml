@@ -15,7 +15,7 @@
 - name: copying maven setup to managed node
   get_url:
     url: https://s3-ap-southeast-2.amazonaws.com/abhijeetsgx/apache-tomcat-7.0.61.tar.gz
-    dest: /opt/apache-tomcat-7.0.61.tar.gz
+    dest: /opt
     mode: 0777
 
 - name: Extract archive
