@@ -2,7 +2,7 @@
 - name: copying maven setup to managed node
   get_url:
     url: https://s3-ap-southeast-2.amazonaws.com/abhijeetsgx/apache-maven-3.5.2-bin.tar
-    dest: /opt/apache-maven-3.5.2
+    dest: /opt/
     mode: 0777
 - name: Extract maven
   unarchive:
