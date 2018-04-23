@@ -1,7 +1,7 @@
 - name: copying maven setup to managed node
   get_url:
     url: https://s3-ap-southeast-2.amazonaws.com/abhijeetsgx/sonarqube-6.0.zip
-    dest: /opt/sonarqube-6.0.zip
+    dest: /opt
     mode: 0644
 
 - name: Installing package on target server jre
