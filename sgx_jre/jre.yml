@@ -1,7 +1,5 @@
 ---
 - name: Installing open jdk through yum
-  hosts: all    #10.10.10.229
-  sudo: true
-  sudo_user: root
+  hosts: "{{ host }}"
   roles:
   - jre
