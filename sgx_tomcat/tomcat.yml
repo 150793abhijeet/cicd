@@ -1,6 +1,7 @@
+---
 - name: installing tomcat on managed node
   hosts: all
   sudo: true
   sudo_user: root
   roles:
-    - tomcat
+  - tomcat
