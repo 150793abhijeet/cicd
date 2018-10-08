@@ -7,7 +7,7 @@
   become: true
   tags: installing_package
 - name: Extract archive
-  command: chdir=/tmp /bin/tar xvf /tmp/apache-maven-3.5.2-bin.tar.gz -C /tmp/ creates=/tmp/apache-maven-3.5.2
+  command: chdir=/tmp /usr/bin/tar xvf /tmp/apache-maven-3.5.2-bin.tar.gz -C /tmp/ creates=/tmp/apache-maven-3.5.2
   mode: 0777
 
 - name: Creating entries for M2_HOME and PATH in profile file
