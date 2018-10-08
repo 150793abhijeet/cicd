@@ -1,12 +1,11 @@
 - name: Install Maven init script
   copy: src=apache-maven-3.5.4-bin.tar.gz dest=/tmp/apache-maven-3.5.4-bin.tar.gz mode=0755
 - name: Installing package on target server jre
-
   yum:
     name: "tar"
     state: present
   become: true
-tags: installing_package
+  tags: installing_package
 - name: Extract archive
   command: chdir=/tmp /bin/tar xvf /tmp/apache-maven-3.5.2-bin.tar.gz -C /tmp/ creates=/tmp/apache-maven-3.5.2
   mode: 0777
