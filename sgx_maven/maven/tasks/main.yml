@@ -2,7 +2,7 @@
   copy: src=apache-maven-3.5.4-bin.tar.gz dest=/tmp/apache-maven-3.5.4-bin.tar.gz mode=0755
 
 - name: Extract archive
-  command: chdir=/tmp /bin/tar xvf /tmp/apache-maven-3.5.2-bin.tar -C /opt/ creates=/tmp/apache-maven-3.5.2
+  command: chdir=/tmp /bin/tar xvf /tmp/apache-maven-3.5.2-bin.tar -C /tmp/ creates=/tmp/apache-maven-3.5.2
   mode: 0777
 
 - name: Creating entries for M2_HOME and PATH in profile file
