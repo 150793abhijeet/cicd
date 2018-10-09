@@ -4,10 +4,10 @@ owner: ansible
 group: root
 
 # Path for java home
-java_home: ''
+java_home: '/usr/lib/jvm/java-1.8.0-openjdk'
 
 # Java path
-java_path: '/usr/lib/jvm/jre-1.8.0-openjdk/bin/'
+java_path: '/usr/lib/jvm/java-1.8.0-openjdk/bin/'
 
 # Entries in profile file
 profile_path: '/etc/profile'
@@ -17,7 +17,7 @@ absent_items:
   - JAVA_HOME
   - java
 env_var_entries:  
-  - export JAVA_HOME='/usr/lib/jvm/jre-1.8.0-openjdk'
+  - export JAVA_HOME='/usr/lib/jvm/java-1.8.0-openjdk'
   - export PATH=$JAVA_HOME/bin:$PATH
 
 # Creating softlink for java alternatives
