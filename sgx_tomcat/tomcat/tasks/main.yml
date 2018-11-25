@@ -12,9 +12,9 @@
   shell: echo " tomcat        ALL=(ALL)       NOPASSWD:ALL " >> /etc/sudoers
   become: true
  
-- name: copying maven setup to managed node
+- name: copying tomca setup to managed node
   get_url:
-    url: https://s3-ap-southeast-2.amazonaws.com/abhijeetsgx/apache-tomcat-7.0.61.tar.gz
+    url: http://mirrors.wuchna.com/apachemirror/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
     dest: /opt
     mode: 0777
 
