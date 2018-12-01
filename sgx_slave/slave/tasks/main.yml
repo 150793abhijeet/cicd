@@ -5,7 +5,7 @@
     mode: 0777
   become: true
 - name: Install slave
-  command: /usr/bin/java -jar agent.jar -jnlpUrl http://54.199.148.179:8080/computer/slave-agent-test3/slave-agent.jnlp -secret "{{ key }}" -workDir "/home/ansible/"
+  command: /usr/bin/java -jar agent.jar -jnlpUrl http://54.199.148.179:8080/computer/slave-agent-test3/slave-agent.jnlp -secret e71784217299340fe38822d46790b2606f5fd9acbefa0a283aebe7b4d54d3831 -workDir "/home/ansible"
   async: 25920000000000               # 60*60*24*30 – 1 month
   poll: 0
   become: true
