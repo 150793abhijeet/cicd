@@ -22,11 +22,11 @@
     - name: Copy the my.cnf
       copy: src=my.cnf dest=/root/.my.cnf owner=root mode=0666
     
-    - mysql_user:
-        name: ansible
-        password: qazxsw@123
-        priv: '*.*:ALL,GRANT'
-        state: present
+    #- mysql_user:
+    #    name: ansible
+    #    password: qazxsw@123
+    #    priv: '*.*:ALL,GRANT'
+    #    state: present
 
 
     - name: removing package
