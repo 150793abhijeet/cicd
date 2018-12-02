@@ -1,5 +1,5 @@
 - name: Install Maven init script
-  copy: src=apache-maven-3.5.4-bin.tar.gz dest=/tmp/apache-maven-3.5.4-bin.tar.gz mode=0755
+  copy: src=apache-maven-3.5.2-bin.tar.gz dest=/tmp/apache-maven-3.5.2-bin.tar.gz mode=0755
 - name: Installing package on target server jre
   yum:
     name: "tar"
@@ -7,7 +7,7 @@
   become: true
   tags: installing_package
 - name: Extract archive
-  command: chdir=/tmp /usr/bin/tar xvf /tmp/apache-maven-3.5.4-bin.tar.gz -C /tmp/ creates=/tmp/apache-maven-3.5.4
+  command: chdir=/tmp /usr/bin/tar xvf /tmp/apache-maven-3.5.2-bin.tar.gz -C /tmp/ creates=/tmp/apache-maven-3.5.2
   mode: 0777
 
 - name: Creating entries for M2_HOME and PATH in profile file
