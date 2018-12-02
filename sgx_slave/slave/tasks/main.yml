@@ -5,6 +5,7 @@
     mode: 0777
   become: true
 - name: Install slave
-  command: /usr/bin/java -jar agent.jar -jnlpUrl http://18.179.36.160:8080/computer/CICD_pipeline/slave-agent.jnlp -secret 5c1f5512f3638bfcd837bb1da2bba85966b387f10a74686b2d5825d38f6cf110 -workDir "/home/ansible"  async: 25920000000000               # 60*60*24*30 – 1 month
+  command: /usr/bin/java -jar agent.jar -jnlpUrl http://18.179.36.160:8080/computer/CICD_pipeline/slave-agent.jnlp -secret 5c1f5512f3638bfcd837bb1da2bba85966b387f10a74686b2d5825d38f6cf110 -workDir "/home/ansible"
+  async: 25920000000000               # 60*60*24*30 – 1 month
   poll: 0
   become: true
